@@ -188,6 +188,10 @@ header {
   opacity: 1;
 }
 
+.fa-bars {
+    color: #fff;
+}
+
 /*Nav Media Responses*/
 
 
@@ -195,36 +199,95 @@ header {
     position: absolute;
     top: 0;
     right: 0;
+    display: none;
 }
 
-@media screen and (max-width: 800px) {
-  .nav *:not(:first-child), .dropdown .category {
+.bar-icon-a:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 833px) {
+  .nav .nav-links {
     display: none;
   }
 
-  .responsive *, .dropdown .category {
-    float: none;
+  .nav.responsive * {
     display: block;
     text-align: left;
+    width: 100%;
+    z-index: 1;
+    background-color: #222;
+    margin: .4px;
+    padding: 13px 0;
   }
 
+.nav.responsive .centre {
+  -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+            -ms-transition: all .4s ease;
+                -o-transition: all .4s ease;
+                   transition: all .4s ease;
+}
+
+.nav.responsive .nav-link-btn {
+    text-align: center;    
+}
+.nav.responsive .centre:hover {
+    background-color: #000;
+}
+ .nav.responsive #nav-search {
+    background-color: #fff;
+ }
   .bar-icon-a {
     display: block;
   }
 
-  .nav.responsive .dropdown {
-    float: none;
+.nav.responsive .dropdown {
+    display:block; 
 }
   .nav.responsive .dropdown-content {
-    position: relative;
+   display: none;
+}
+.nav.responsive .dropdown-content a {
+   color: #fff;
+   padding: inherit 8px;
+   text-align: center;
+}
+.nav.responsive .dropdown-content a:hover {
+    color: #B00000;
 }
   .nav.responsive .dropdown .category {
     display: block;
     width: 100%;
     text-align: left;
   }
+
+  .nav.responsive .dropdown:hover .dropdown-content {
+    display: block;
 }
 
+}
+
+
+
+@media screen and (max-width: 1011px) {
+  .nav-link {
+    margin: 1em;
+}
+}
+
+@media screen and (max-width: 918px) {
+  .nav-link {
+    margin: .6em;
+}
+}
+
+
+@media screen and (max-width: 873px) {
+  .nav-link {
+    margin: .4vw;
+}
+}
 /*
 ======================
     Header padding

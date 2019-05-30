@@ -14,4 +14,11 @@ function listenForNavBar() {
     })
 }
 
-listenForNavBar()
+function toggleNav() {
+  let nav = document.getElementById("nav-nav");
+  if (nav.className === "nav") {
+    nav.className += " responsive";
+  } else {
+    nav.className = "nav";
+  }
+}
