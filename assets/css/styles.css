@@ -37,6 +37,17 @@ Navigation
   display: inline;
 }
 
+.nav > .nav-btn {
+  display: none;
+}
+.nav > #nav-check {
+  display: none;
+}
+.nav > #nav-check {
+  display: none;
+}
+
+
 .nav > .nav-head > .nav-title {
   display: inline-block;
   font-size: 1.2em;
@@ -179,49 +190,38 @@ header {
 
 /*Nav Media Responses*/
 
-@media (max-width:600px) {
-  .nav > .nav-btn {
-    display: inline-block;
+
+.bar-icon-a {
     position: absolute;
-    right: 0px;
-    top: 0px;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .nav *:not(:first-child), .dropdown .category {
+    display: none;
   }
-  .nav > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
-  }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .nav > .nav-btn > label > span {
+
+  .responsive *, .dropdown .category {
+    float: none;
     display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
+    text-align: left;
   }
-  .nav > .nav-links {
-    position: absolute;
+
+  .bar-icon-a {
+    display: block;
+  }
+
+  .nav.responsive .dropdown {
+    float: none;
+}
+  .nav.responsive .dropdown-content {
+    position: relative;
+}
+  .nav.responsive .dropdown .category {
     display: block;
     width: 100%;
-    background-color: #333;
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0px;
-  }
-  .nav > .nav-links > a {
-    display: block;
-    width: 100%;
-  }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
-    height: 0px;
-  }
-  .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
+    text-align: left;
   }
 }
 
@@ -264,7 +264,6 @@ header {
     font-weight: bolder;
     display: flex;
     justify-content: space-around;
-    border: 1px solid #333;
     position: relative;
     padding: 3em 0;
  }
