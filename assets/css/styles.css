@@ -416,9 +416,43 @@ header {
     text-align: center;
 }
 
-.fa-react {
+.fa-react, .fa-vuejs, .fa-fire, .fa-crosshairs,
+.fa-node, .fa-gem, .fa-uikit,
+.fa-wizards-of-the-coast, .fa-codiepie,
+.fa-accusoft {
     font-size: 5em;
     color: #00B06E;
+}
+
+.fa-th {
+    font-size: 1em;
+    margin-left: .4em;
+    color: #F70000;
+}
+
+.fa-vuejs {
+    color: #007C16;
+}
+.fa-fire {
+    color: #FF0000;
+}
+.fa-crosshairs {
+    color: #B5084F;
+}
+.fa-node {
+    color: #009F18;
+}
+.fa-gem, .fa-uikit{
+    color: #000;
+}
+.fa-wizards-of-the-coast {
+    color: #17B696;
+}
+.fa-codiepie {
+    color: #FF5733;
+}
+.fa-accusoft {
+    color: #7E007A;
 }
 
 .course-item .more-detail {
@@ -426,7 +460,6 @@ header {
 }
 
 .more-detail {
-    border: 1px solid #222;
     line-height: 1.4em;
     font-size: 14px;
 }
@@ -463,7 +496,7 @@ header {
     color: gold;
 }
 
-#star-figure {
+.star-figure {
     margin-left: 1.2em;
     word-spacing: .3em;
 }
@@ -501,6 +534,9 @@ header {
    .course-item.first-ci .more-detail {
     display: none;
    }
+   .descr-more-detail {
+    display: block;
+   }
     .course-item.first-ci .cards-cont{
     margin-left: 0;
   }
@@ -531,4 +567,55 @@ header {
     min-height: 155px;
     margin: .6em;
    }
+}
+
+.course-category-label {
+    margin-left: 3em;
+    font-size:
+}
+
+.header-cat-label {
+    margin: 0;
+    padding: 0;
+}
+
+.extra-ci {
+    margin-top: 0;
+}
+
+.extra-ci .card-course {
+    margin: 0 .3em;
+    min-width: 170px;
+    min-height: 140px;
+}
+
+/*
+===============
+    Footer
+=============== */
+
+footer {
+    width: 99%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 3em;
+    background-color: #000;
+    border-radius: 4px;
+    border: 1px solid #333;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    color: #fff;
+    font-size: .85em;
+}
+
+.f-title {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+.f-title-first {
+    color: #F70000;
 }
